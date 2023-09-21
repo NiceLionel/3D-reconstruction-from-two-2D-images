@@ -19,4 +19,7 @@ The main tasks and highlights of this project include:
 
 4. **Reprojections**: A crucial part of validation, I compared original image points in one camera to the reprojections of image points from the other camera. This involved applying the camera projection model and understanding the transformation's expression between the two views.
 
+## Usage
+To run this 3D reconstruction project, first save chosen two 2D images in folder "data", then run "main.ipynb" in folder code block by block.
+
 **Tools & Packages**: This project was carried out in a Python environment, utilizing packages such as numpy, matplotlib, opencv-python, opencv-contrib-python, and jupyterlab.
