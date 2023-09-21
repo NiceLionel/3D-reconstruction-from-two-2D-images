@@ -6,7 +6,7 @@ In this project, I ventured into the realm of 3D reconstruction using two 2D ima
 
 The main tasks and highlights of this project include:
 
-1. **3D Transformation Recovery**: I aimed to find the 3D transformation (R, T) between two views such that for two points \(P1, P2 \in R^3\) describing the same scene in frames 1 and 2, we have \(P2 = RP1 + T\).
+1. **3D Transformation Recovery**: I aimed to find the 3D transformation (R, T) between two views such that for two points \(P1, P2 in R^3\) describing the same scene in frames 1 and 2, we have \(P2 = RP1 + T\).
 
 2. **Estimation of the Essential Matrix**:
    - **Least-squares Estimation**: Implemented the 8-point algorithm to estimate the essential matrix \(E\) using the SVD decomposition method.
