@@ -1,4 +1,4 @@
-***3D Reconstruction from 2D Images***
+**3D Reconstruction from 2D Images**
 
 ## Introduction
 
