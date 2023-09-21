@@ -16,7 +16,6 @@ def ransac_estimator(X1, X2, num_iterations=60000):
         sample_indices = permuted_indices[:sample_size]
         test_indices = permuted_indices[sample_size:]
 
-        """ YOUR CODE HERE
         """
         X1_sample = X1[sample_indices]
         X1_test = X1[test_indices]
@@ -34,7 +33,6 @@ def ransac_estimator(X1, X2, num_iterations=60000):
             cur_residual = residual(X1[index],X2[index],E,E1)
             if (cur_residual<error):
                 inliers = np.append(inliers,index).astype(int)
-        """ END YOUR CODE
         """
         if inliers.shape[0] > best_num_inliers:
             best_num_inliers = inliers.shape[0]
