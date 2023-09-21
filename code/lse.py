@@ -1,7 +1,6 @@
 import numpy as np
 
 def least_squares_estimation(X1, X2):
-  """ YOUR CODE HERE
   """
   A = np.zeros((len(X1),9))
   for i in range(len(X1)):
@@ -17,6 +16,5 @@ def least_squares_estimation(X1, X2):
   E_prime = VT.T[:,8].reshape(3,3).T
   U, S, VT = np.linalg.svd(E_prime)
   E = U @ np.diag([1,1,0]) @ VT
-  """ END YOUR CODE
   """
   return E
