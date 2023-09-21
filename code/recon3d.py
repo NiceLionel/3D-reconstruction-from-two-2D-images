@@ -13,7 +13,6 @@ def reconstruct3D(transform_candidates, calibrated_1, calibrated_2):
     T = candidate['T']
 
     lambdas = np.zeros((2, calibrated_1.shape[0]))
-    """ YOUR CODE HERE
     """
     for i in range(len(calibrated_1)):
         x1_coord = calibrated_1[i]
@@ -32,7 +31,6 @@ def reconstruct3D(transform_candidates, calibrated_1, calibrated_2):
         pinv_A = np.linalg.pinv(A)
         depth = pinv_A @ Tt
         lambdas[0,i], lambdas[1,i] = depth[0], depth[1]
-    """ END YOUR CODE
     """
     num_front = np.sum(np.logical_and(lambdas[0]>0, lambdas[1]>0))
 
