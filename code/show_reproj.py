@@ -3,12 +3,10 @@ import matplotlib.pyplot as plt
 
 def show_reprojections(image1, image2, uncalibrated_1, uncalibrated_2, P1, P2, K, T, R, plot=True):
 
-  """ YOUR CODE HERE
   """
   T = T.reshape(-1,1)
   P1proj = (K @ (R @ P1.T + T)).T
   P2proj = (K @ (R.T @ P2.T - R.T @ T)).T
-  """ END YOUR CODE
   """
 
   if (plot):
