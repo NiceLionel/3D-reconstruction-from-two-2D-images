@@ -30,13 +30,11 @@ def plot_epipolar_lines(image1, image2, uncalibrated_1, uncalibrated_2, E, K, pl
     """ Plots the epipolar lines on the images
     """
 
-    """ YOUR CODE HERE
     """
     inv_K = np.linalg.inv(K)
     F = inv_K.T @ E @ inv_K
     epipolar_lines_in_1 = F.T @ uncalibrated_2
     epipolar_lines_in_2 = F @ uncalibrated_1
-    """ END YOUR CODE
     """
     
     if(plot):
